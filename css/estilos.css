@@ -6,18 +6,23 @@
 }
 body{
     background: #77dd77;
-    padding: 1.5rem;
 }
+
+.content-body{
+    margin: 2rem;
+}
+
 a{
     text-decoration: none;
 }
 
 .content-cabecera{
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem;
     margin-top: 4rem;
     text-align: center;
     margin: auto;
+    padding-top: 2rem;
 }
 .content-cabecera h1{
     font-weight: 100;
@@ -38,7 +43,7 @@ a{
     height: 5rem;
     border-radius: 10%;
     overflow: hidden;
-    border: 3px solid black;
+    border: .188rem solid black;
     margin: auto;
 }
 .content-logo img{
@@ -49,12 +54,13 @@ a{
 
 
 main{
-    max-width: 1000px;
+    text-align: center;
+    max-width: 62.5rem;
     background: #FFF;
     padding: 2.8rem;
     margin: auto;
-    margin-top: 40px;
-    border-radius: 8px;
+    margin-top: 2.5rem;
+    border-radius: 0.5rem;
 }
 
 /*Content1*/
@@ -308,7 +314,76 @@ main{
     margin: auto;
 }
 
+/*FOOTER*/
 
+.content-footer{
+    width: 100%;
+    padding: 3.125rem 0rem;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover; 
+}
+
+.content-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin: auto;
+    margin-top: 6.25rem;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+.box-footer-logo img{
+    max-width: 11.5rem;
+}
+
+.box-footer-texto{
+    max-width: 21.875rem;
+    margin-top: 1.25rem;
+    font-weight: 300;
+    color: #7a7a7a;
+    font-size: 1.125rem;
+}
+
+.box-footer h2{
+    margin-bottom: 1.875rem;
+    color: #A89CC8;
+    font-weight: 700;
+}
+.box-footer a{
+    color: #7a7a7a;
+    margin-top: 0.625;
+    font-weight: 600;
+}
+.box-footer a:hover{
+    opacity: 0.8;
+}
+.box-footer i{
+    font-size: 1.25rem;
+}
+
+footer hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+.copyright-footer{
+    display: flex;
+    max-width: 75rem;
+    margin: auto;
+    padding: 0rem 2.5rem;
+}
+.copyright-footer p{
+    margin: auto;
+    margin-top: 1.25rem;
+    color: #7a7a7a;
+}
 
 @media screen and  (min-width: 800px){
 
