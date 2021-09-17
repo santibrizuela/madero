@@ -13,20 +13,20 @@ window.onscroll = function(){
 
 document.getElementById("btn-menu").addEventListener("click", mostrar_menu);
 
-menu = document.getElementById("header");
-body = document.getElementById("content-all");
-nav = document.getElementById("nav");
+    menu = document.getElementById("header");
+    body = document.getElementById("content-body");
+    nav = document.getElementById("nav");
 
 function mostrar_menu(){
     menu.classList.toggle("move-content");
-    body.classList.toggle("move-content");
+    body.classList.toggle("move-content")
     nav.classList.toggle("move-nav");
 }
 
 window.addEventListener("resize", function(){
     if(window.innerWidth > 760){
         menu.classList.remove("move-content");
-        body.classList.remove("move-content");
+        body.classList.remove("move-content")
         nav.classList.remove("move-nav");
     }
 });
