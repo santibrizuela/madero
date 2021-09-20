@@ -20,6 +20,35 @@
 }
 
 
+/*BOTONES*/
+.btn{
+    color: var(--greenpastel);
+    width: 8rem;
+    padding: 1rem;
+    background: #FFF;
+    border: 1px solid var(--greenpastel);
+    box-shadow: 1px 1px 30px -5px #20202049;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 700ms;
+}
+.btn:hover{
+    background: var(--greenpastel);
+    color: white;
+    box-shadow: 1px 1px 30px -5px #20202085;    
+}
+
+.btn-card{
+    background: var(--darkmadero);
+    transition: all 700ms;
+}
+.btn-card:hover{
+    color: var(--darkmadero);
+}
+
+
 
 
 
@@ -72,7 +101,6 @@ header{
 nav{
     height: 100%;
     transition: all 300ms;
-    padding-top: 1rem;
 }
 nav ul{
     height: 100%;
@@ -103,7 +131,7 @@ nav ul a:hover{
 .nav-mod{
     height: 4rem;
     box-shadow: 1px 1px 10px 0px #00000010;
-    background: #243324;
+    background: var(--darkmadero);
 }
 /*BTN-NAV*/
 .btn-menu{
@@ -224,17 +252,17 @@ body{
     max-width: 400px;
     font-size: 60px;
     font-weight: 900;
-    color: #243324;
+    color: var(--darkmadero);
 }
 .cover h2{
     font-size: 60px;
     font-weight: 900;
-    color: #77dd77;
+    color: var(--greenpastel);
     margin-top: -30px;
 }
 .cover p{
     margin-top: 10px;
-    color: #243324;
+    color: var(--darkmadero);
 }
 
 
@@ -288,11 +316,15 @@ body{
 }
 .content-cabecera p{
     margin-top: 1rem;
-    color: #243324;
+    color: var(--darkmadero);
 }
 .content-cabecera a{
-    color: #243324;
+    color: var(--darkmadero);
     font-weight: 600;
+}
+.content-cabecera a:hover{
+    border-bottom: 0.063rem solid var(--darkmadero);
+    font-weight: 800;  
 }
 
 .content-logo{
@@ -313,6 +345,169 @@ body{
 
 /*CATALOGO*/
 
+.content-catalogo{
+    max-width: 62.5rem;
+    padding: 1.25;
+    padding-bottom: 2.5rem;
+    margin: auto;
+    margin-top: 3.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 15rem;
+    position: relative;
+    margin: 1.25rem;
+    text-align: center;
+    transition: all 300ms;
+    border-radius: 1.25rem;
+}
+.card:hover{
+    box-shadow: 1px 1px 20px -10px #20202049;
+}
+.card:hover .card-info{
+    margin-top: 0;
+    border-radius: 0 0 1.25rem 1.25rem;
+}
+.card:hover .card-icon{
+    margin-top: -3rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.card-icon{
+    width: 100%;
+    height: 13.75rem;
+    background: #FFF;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+.card-icon i{
+    font-size: 9.375rem;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+.card-info{
+    width: 100%;
+    height: 13.75rem;
+    border-radius: 1.25rem;
+    color: #FFF;
+    margin-top: -13.75rem;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+.card-info p{
+    font-size: .8rem;
+    margin-top: .6rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    -moz-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+
+/*MODIF INDIV DE CARD*/
+/*1*/
+.card1 i{
+    color: #FFF;
+}
+.card1 .card-icon{
+    background: var(--pinkpastel);
+}
+.card1:hover .card-icon{
+    background: var(--pinkpastel);
+}
+.card1:hover i{
+    color: #FFF;
+}
+
+.info1{
+    background: var(--pinkpastel);
+}
+
+.btn-1{
+    color: var(--pinkpastel);
+    border: 1px solid var(--pinkpastel);
+}
+.btn-1:hover{
+    background: #FFFFFF80;
+    color: var(--pinkpastel);
+}
+/*2*/
+.card2 i{
+    color: #FFF;
+}
+.card2 .card-icon{
+    background: var(--purppastel);
+}
+.card2:hover .card-icon{
+    background: var(--purppastel)
+}
+.card2:hover i{
+    color: #FFF;
+}
+
+.info2{
+    background: var(--purppastel);
+}
+
+.btn-2{
+    color: var(--purppastel);
+    border: 1px solid var(--purppastel);
+}
+.btn-2:hover{
+    background: #FFFFFF49;
+    color: #FFF;
+}
+/*3*/
+.card3 i{
+    color: #FFF;
+}
+.card3 .card-icon{
+    background: var(--bluepastel);
+}
+.card3:hover .card-icon{
+    background: var(--bluepastel);
+}
+.card3:hover i{
+    color: #FFF;
+}
+
+.info3{
+    background: var(--bluepastel);
+}
+
+.btn-3{
+    color: var(--bluepastel);
+    border: 1px solid var(--bluepastel);
+}
+.btn-3:hover{
+    background: #FFFFFF49;
+    color: #FFF;
+}
+
+.btn-card{
+    background: #FFF;
+}
+
+
+
+
+
+
+
+
 /*MAIN*/
 
 
@@ -325,12 +520,16 @@ main{
     margin-top: 2.5rem;
     border-radius: 0.5rem;
 }
+main h1{
+    font-weight: 500;
+}
+
 
 /*Content1*/
 
 .content1{
     width: 100%;
-    margin-top: 1.5rem;
+
 }
 .content1-img{
     width: 100%;
@@ -346,44 +545,25 @@ main{
     width: 100%;
     text-align: center;
 }
-.content1-text h1{
-    margin-top: 2rem;
-    font-weight: 100;
-}
 .content1-text hr{
     width: 10rem;
     height: .2rem;
     margin: auto;
     border-style: none;
-    background: -webkit-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
-    background: -moz-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
-    background: -o-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
+    background: -webkit-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: -moz-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: -o-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
     margin-top: 1rem;
 }
 .content1-text p{
     margin-top: 1rem;
-    color: #243324;
+    color: var(--darkmadero);
     font-size: .9rem;
     letter-spacing: .05rem;
 }
 
-.btn-leer{
-    color: #77dd77;
-    width: 8rem;
-    padding: 1rem;
-    border: 1px solid #77dd77;
-    box-shadow: 1px 1px 30px -5px #20202049;
-    border-radius: 1rem;
-    margin: auto;
-    margin-top: 2rem;
-    cursor: pointer;
-    transition: all 700ms;
-}
-.btn-leer:hover{
-    background: #77dd77;
-    color: white;
-    box-shadow: 1px 1px 30px -5px #20202085;    
-}
+
 
 /*Content2*/
 
@@ -392,8 +572,7 @@ main{
     text-align: center;
 }
 .content2 h1{
-    font-weight: 100;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .content2 hr{
@@ -401,9 +580,9 @@ main{
     height: .2rem;
     margin: auto;
     border-style: none;
-    background: -webkit-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
-    background: -moz-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
-    background: -o-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
+    background: -webkit-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: -moz-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: -o-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
     margin-top: 1rem;
 }
 
@@ -419,7 +598,7 @@ main{
     font-size: 1rem;
     margin-top: 1.4rem;
     letter-spacing: .05rem;
-    color: #243324;
+    color: var(--darkmadero);
 }
 
 .details-item{
@@ -429,13 +608,13 @@ main{
 }
 
 .polilactico{
-    color: #EFA8B0;
+    color: var(--pinkpastel);
 }
 .biodegradable{
-    color: #A89CC8;
+    color: var(--purppastel);
 }
 .compostaje{
-    color: #8CC9F9;
+    color: var(--bluepastel);
 }
 
 .details-icon{
@@ -463,23 +642,23 @@ main{
     text-align: center;
 }
 .content3 h1{
-    font-weight: 100;
-    margin-top: 20px;
+    font-weight: 500;
+    margin-top: 2rem;
 }
 .content3 hr{
     width: 7rem;
     height: .15rem;
     margin: auto;
     border-style: none;
-    background: -webkit-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
-    background: -moz-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
-    background: -o-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
+    background: -webkit-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: -moz-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: -o-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
     margin-top: 1rem;
 }
 .content3 p{
     margin-top: 40px;
     letter-spacing: 1px;
-    color: #243324;
+    color: var(--darkmadero);
 }
 .content-estadisticas{
     width: 100%;
@@ -508,17 +687,17 @@ main{
 
 /*ITEMS PASTELES*/
 .item1{
-    background: #EFA8B0;
+    background: var(--pinkpastel);
     border-radius: 10px 10px 0px 0px;
 }
 .item2{
-    background: #C79CC8;
+    background: var(--violetapastel);
 }
 .item3{
-    background: #A89CC8;
+    background: var(--purppastel);
 }
 .item4{
-    background: #9BB2E1;
+    background: var(--bluepastel);
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -534,23 +713,23 @@ main{
     text-align: center;
 }
 .content4 h1{
-    font-weight: 100;
-    margin-top: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
 }
 .content4 hr{
     width: 7rem;
     height: .2rem;
     margin: auto;
     border-style: none;
-    background: -webkit-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
-    background: -moz-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
-    background: -o-linear-gradient(left, #EFA8B0, #A89CC8, #8CC9F9);
+    background: -webkit-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: -moz-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
+    *background: -o-linear-gradient(left, var(--pinkpastel), var(--purppastel), var(--bluepastel));
     margin-top: 1rem;
 }
 .content4 p{
     margin-top: 2.5rem;
     font-size: 1.2rem;
-    color: #243324;
+    color: var(--darkmadero);
 }
 
 .content4-btn{
@@ -562,7 +741,7 @@ main{
 .content4-btn button{
     width: 12.5rem;
     height: 3.75rem;
-    background: #77dd77;
+    background: var(--greenpastel);
     border-style: none;
     border-radius: 10px;
     color: white;
@@ -572,8 +751,8 @@ main{
 }
 .content4-btn button:hover{
     background:white;
-    color: #77dd77;
-    border: 2px solid #77dd77;
+    color: var(--greenpastel);
+    border: 2px solid var(--greenpastel);
 }
 .content4-leer{
     margin: auto;
@@ -585,7 +764,7 @@ main{
 
 /*-----------------------------------FOOTER------------------------------*/
 
-.content-footer{
+footer{
     width: 100%;
     padding: 4rem 0rem;
     background-image: url(../img/background-footer.svg);
@@ -598,6 +777,7 @@ main{
     justify-content: space-between;
     margin: auto;
     margin-top: 6.25rem;
+    max-width: 75rem;
 }
 
 .box-footer{
@@ -620,7 +800,7 @@ main{
 
 .box-footer h2{
     margin-bottom: 1.875rem;
-    color: #A89CC8;
+    color: var(--purppastel);
     font-weight: 700;
 }
 .box-footer a{
